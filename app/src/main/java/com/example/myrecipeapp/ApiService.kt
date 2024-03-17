@@ -9,6 +9,7 @@ private  val retrofit = Retrofit.Builder().baseUrl("www.themealdb.com/api/json/v
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 
+/*The service*/
 val recipeService = retrofit.create(ApiService::class.java)
 
 interface ApiService{
